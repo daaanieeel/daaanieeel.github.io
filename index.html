@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Portfolio</title>
+    <style>
+      html, body {
+         margin: 0;
+         height: 100%;
+         background: rgba(24, 24, 24, 1) no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+      }
+      #background {
+          position: absolute;
+          width: 100%;
+          height: 12vw;
+          left: 0;
+          top: 0;
+          border: none;
+          pointer-events: none;
+          box-shadow: 0px 15px 10px;
+      }
+      .main {
+        height:100%;
+        margin-top:-25px;
+        font-family: Verdana;
+        text-align: center;
+      }
+      .heading{
+        text-align:center;
+      }
+      #mainLabel1{
+        background: rgba(0, 0, 0, 1);
+        color: white;
+        height: 50%;
+        width: 50%;
+        margin-left: 10%;
+        font-family: Arial;
+        font-size: 5vw;
+        border-radius:25px;
+        text-align:center;
+        filter: drop-shadow(0 10px 10px black);
+        text-shadow: 0px 4px 3px white;
+        padding-bottom:2vh;
+      }
+      .title{
+        background: rgba(48, 48, 48, 1);
+        padding:18px;
+        position: relative;
+        margin-left:10vw;
+        text-align: left;
+        font-size: 4vh;
+        color: white;
+        margin-top: 10vh;
+      }
+      .parag{
+        background: rgba(48, 48, 48, 1);
+        padding:18px;
+        position: relative;
+        margin-left:10vw;
+        text-align: left;
+        font-size: 2vh;
+        color: white;
+        margin-top: 5vh;
+        line-height:2;
+      }
+      .listed{
+        background: rgba(48, 48, 48, 1);
+        padding-left:5vh;
+        padding-top:2vh;
+        padding-bottom:2vh;
+        position: relative;
+        margin-left:25vw;
+        text-align: left;
+        font-size: 2vh;
+        color: white;
+        line-height:3;
+      }
+      .sublist{
+        background: rgba(48, 48, 48, 1);
+        position: relative;
+        text-align: left;
+        font-size: 2vh;
+        color: white;
+        line-height:2;
+      }
+      .sideBySide{
+        display:flex;
+        flex-direction:row;
+        margin-left:12%
+      }
+      #skill{
+        font-size:3vh;
+        padding-top:0;
+        padding-left:0;
+        padding-bottom:0;
+        margin-top:0%;
+        margin-bottom:0%;
+        margin-left:-3vh;
+      }
+      .links{
+        background: rgba(48, 48, 48, 1);
+        padding:18px;
+        margin-top: 8vh;
+      }
+      #about{
+        display:inline-block;
+        margin-left:4vw;
+        margin-top: 2vh;
+      }
+      hr.double {
+        margin-top:5vh;
+        border-top: 3px double;
+        border-bottom: none;
+      }
+      .project {
+        background: rgba(48, 48, 48, 1);
+        border-radius:25px;
+        margin-left:33%;
+        margin-right:33%;
+        padding-top:2vh;
+      }
+      .projectTitle {
+        text-align: center;
+        font-size: 3vh;
+        color: white;
+
+      }
+      .projectDesc {
+        text-align: center;
+        font-size: 2vh;
+        color: white;
+        line-height:2;
+      }
+      .more {
+        text-align: center;
+        font-size: 3vh;
+        color: white;
+        line-height:2;
+      }
+      a:link, a:visited {
+      color: white;
+      text-decoration: underline;
+    }
+    </style>
+  </head>
+  <body>
+    <iframe id="background" src="responsive.html"></iframe>
+    <div class ="heading">
+      <h1 id = "mainLabel1">My Portfolio</h1>
+    </div>
+    <div class ="main">
+      <p class = "title">Hi, I'm <b>Daniel</b></p>
+      <div class = "sideBySide">
+        <a href="https://github.com/daaanieeel"><img class = "links" src="github-mark-white.png" alt="Github" style="width:6vh;height:6vh;"></a>
+        <a href="https://leetcode.com/daaanieeel/"><img class = "links" src="LeetCode_white.png" alt="Leetcode" style="width:6vh;height:6vh;"></a>
+        <p class = "parag" id = "about"><b>A Bit About Me</b><br>Hey there, my name is Daniel and I'm an undergraduate student currently pursuing a Computer Science degree! Ever since a young age I've been passionate about programming and technology, slowly but surely expanding my skillset. I learn fast and am eagerly looking forward to one day having a career in Software Engineering or Web Development. As a hobby, I develop games and also am very passionate about game design.</p>
+      </div>
+      <ul class = "listed">
+        <p id="skill"><b>Skillset:</b></p>
+        <li>Python</li>
+        <ul class = "sublist">
+          <a href="https://www.pygame.org/news"><li id="pygame">Pygame</li></a>
+          <a href="https://www.djangoproject.com"><li id="django">Django</li></a>
+          <a href="https://numpy.org"><li id="numpy">NumPy</li></a>
+        </ul>
+        <li>C++</li>
+        <ul class = "sublist">
+          <a href="https://www.sfml-dev.org"><li id="sfml">SFML</li></a>
+          <a href="https://www.vulkan.org"><li id="vulkan">Vulkan</li></a>
+          <a href="https://www.libsdl.org"><li id="sdl">SDL</li></a>
+        </ul>
+        <li>Java</li>
+        <ul class = "sublist">
+          <a href="https://files.minecraftforge.net/net/minecraftforge/forge/"><li id="mcforge">Forge</li></a>
+          <a href="https://jmonkeyengine.org"><li id="jmonkey">jMonkeyEngine</li></a>
+        </ul>
+        <li>JavaScript</li>
+        <ul class = "sublist">
+          <a href="https://threejs.org"><li id="threej">Three.js</li></a>
+          <a href="https://reactjs.org"><li id="react">React.js</li></a>
+        </ul>
+      </ul>
+      <hr class="double">
+      <p class = "title">Projects</p>
+      <div class = "project">
+        <img src="betris.gif" alt="Betris" style="width:25%;height:25%;">
+        <a href="https://github.com/daaanieeel/betris-py"><p class = "projectTitle"><b>Betris</b></p></a>
+        <p class = "projectDesc">Betris is a procedurally generated version of Tetris in which every piece is randomly generated in realtime using a recursive algorithm I designed. It is programmed in python, using the pygame library.</p>
+      </div>
+      <div class = "project">
+        <img src="astar.png" alt="A* Pathfinding" style="width:25%;height:25%;">
+        <a href="https://github.com/daaanieeel/Java-A-"><p class = "projectTitle"><b>Java A* Pathfinding</b></p></a>
+        <p class = "projectDesc">This is an implementation of A* pathfinding using Java. In the provided source code, a 2d map with random barriers is generated and the most efficient path from point A to point B is generated using the A* Pathfinding algorithm and displayed.</p>
+      </div>
+      <p class = "more">More projects being added soon...</p>
+    </div>
+  </body>
+</html>
